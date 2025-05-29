@@ -24,6 +24,10 @@ This project provides an API for detecting NSFW content in images using `nsfwjs`
 
 ### ✅ Example Response:
 
+## This is a Neutral image with a probability of 62.0 %
+
+And
+
 ```json
 [
   { "className": "Neutral", "probability": 0.8934 },
@@ -32,3 +36,5 @@ This project provides an API for detecting NSFW content in images using `nsfwjs`
   { "className": "Sexy", "probability": 0.0203 },
   { "className": "Drawing", "probability": 0.01 }
 ]
+
+
