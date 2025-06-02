@@ -38,3 +38,18 @@ And
 ]
 
 
+## Endpoint: Detect NSFW Content in Video
+Method: POST
+
+URL: http://localhost:4000/nsfw-video
+
+Headers:
+Content-Type: multipart/form-data
+
+Body (form-data):
+Key: video
+
+Type: File
+
+Value: Select a .mp4 video file
+
