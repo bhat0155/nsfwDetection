@@ -8,17 +8,17 @@ This project provides an API for detecting NSFW content in images using `nsfwjs`
 
 ## 📮 How to Use in Postman
 
-### 🔍 Endpoint: Detect NSFW Content in Image
+### 🔍 Endpoint: Detect NSFW Content in Image or video
 
 - **Method:** `POST`
-- **URL:** `http://localhost:4000/nsfw`
+- **URL:** `http://localhost:4000/nsfw` or `http://localhost:4000/nsfw-video`
 - **Headers:**  
   `Content-Type: multipart/form-data`
 
 ### Body (form-data):
-- **Key:** `file`
+- **Key:** `file` or `video` 
 - **Type:** File
-- **Value:** Select an image file (preferably JPEG)
+- **Value:** Select an image file (preferably JPEG) or mp4 video
 
 ---
 
@@ -36,20 +36,3 @@ And
   { "className": "Sexy", "probability": 0.0203 },
   { "className": "Drawing", "probability": 0.01 }
 ]
-
-
-## Endpoint: Detect NSFW Content in Video
-Method: POST
-
-URL: http://localhost:4000/nsfw-video
-
-Headers:
-Content-Type: multipart/form-data
-
-Body (form-data):
-Key: video
-
-Type: File
-
-Value: Select a .mp4 video file
-
